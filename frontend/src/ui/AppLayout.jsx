@@ -1,6 +1,5 @@
 import Navbar from "../components/Navbar";
 import { Outlet } from "react-router";
-import TempNavbar from "../components/TempNavbar";
 
 function AppLayout() {
   return (
