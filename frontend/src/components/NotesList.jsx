@@ -1,7 +1,7 @@
-import { notes } from "../data/noteData";
+// import { notes } from "../data/noteData";
 import Note from "./Note";
 
-function NotesList() {
+function NotesList({ notes }) {
   return (
     <div className="grid gap-2 mt-5 lg:grid-cols-3">
       {notes.map((note, i) => (

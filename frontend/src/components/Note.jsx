@@ -1,6 +1,14 @@
 function Note({ note }) {
   return (
-    <div className="border-2 border-blue-500 rounded-md p-4 flex flex-col">
+    <div
+      className={`border-2 border-blue-500 rounded-md p-4 flex flex-col ${
+        note.priority === "High"
+          ? "bg-rose-200 dark:bg-rose-700"
+          : note.priority === "Med"
+          ? "bg-emerald-200 dark:bg-emerald-700"
+          : "bg-yellow-200 dark:bg-yellow-700"
+      }`}
+    >
       <div className="font-semibold">{note.title}</div>
       <div className="flex justify-between mt-2">
         <div className="text-sm">{note.date}</div>
